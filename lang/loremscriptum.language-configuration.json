@@ -1,0 +1,8 @@
+{
+  "name": "loremscriptum",
+  "fileTypes": ["lorem"],
+  "scopeName": "source.loremscriptum",
+  "brackets": [
+    [":", ";"]
+  ]
+}

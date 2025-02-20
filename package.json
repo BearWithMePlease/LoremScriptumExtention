@@ -1,0 +1,78 @@
+{
+  "name": "loremscriptum",
+  "displayName": "LoremScriptum",
+  "description": "A code highlighter for the eso lang LoremScriptum",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.97.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "loremscriptum.toggleReplace",
+        "title": "LOREM toggle latex replace on save"
+      },
+      {
+        "command": "loremscriptum.replaceLatex",
+        "title": "LOREM replace latex in .lorem File"
+      }
+    ],
+    "languages": [
+      {
+        "id": "loremscriptum",
+        "extensions": [".lorem"],
+        "aliases": ["LoremScriptum"],
+        "configuration": "./lang/loremscriptum.language-configuration.json",
+        "icon": {
+          "light": "images/3232LS.png",
+          "dark": "images/3232LS.png"
+        }
+      }
+    ],
+    "grammars": [
+      {
+        "language": "loremscriptum",
+        "scopeName": "source.loremscriptum",
+        "path": "./lang/loremscriptum.tmLanguage.json"
+      }
+    ],
+    "configurationDefaults": {
+      "[lorem]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2
+      }
+    },
+    "fileIconThemes": [
+      {
+        "id": "loremscriptum-icon-theme",
+        "label": "LoremScriptum File Icons",
+        "path": "./icons/theme.json"
+      }
+    ]
+  },
+  
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.97.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.22.0",
+    "@typescript-eslint/parser": "^8.22.0",
+    "eslint": "^9.19.0",
+    "typescript": "^5.7.3",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}

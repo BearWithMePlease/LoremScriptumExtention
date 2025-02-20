@@ -1,0 +1,10 @@
+{
+    "iconDefinitions": {
+        "loremscriptum": {
+            "iconPath": {
+                "light": "../images/3232LS.png",
+                "dark": "../images/3232LS.png"
+            }
+        }
+    }    
+}

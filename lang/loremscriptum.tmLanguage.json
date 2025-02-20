@@ -1,0 +1,20 @@
+{
+  "fileTypes": ["lorem"],
+  "name": "loremscriptum",
+  
+  "patterns": [
+    {
+      "name": "keyword.control.loremscriptum",
+      "match": "(\\b(si|ni|nisi|retro)\\b)|(∑|λ)"
+    },
+    {
+      "name": "keyword.type",
+      "match": "\\b(litera|numerus)\\b"
+    },
+    {
+      "name": "punctuation.definition.colon.loremscriptum",
+      "match": "(?<!:)[:]"
+    }    
+  ],
+  "scopeName": "source.loremscriptum"
+}
