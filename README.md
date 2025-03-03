@@ -1,6 +1,4 @@
-# loremscriptum README
-
-This is the README for your extension "loremscriptum". After writing up a brief description, we recommend including the following sections.
+# LoremScriptum
 
 This is a simple syntax highlighting and "to unicode coverter" Extention for the esolang "LoremScriptum".
 
