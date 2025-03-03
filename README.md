@@ -13,7 +13,7 @@ This is a simple syntax highlighting and "to unicode coverter" Extention for the
 * comments
 * and Control-Structure
 
-![Highlighting Feature](images/image.png)
+![image](https://github.com/user-attachments/assets/534087c8-6ebf-4dbd-bc40-186f159629ec)
 
 **Conversion of:**
 * "==" => ⇔
@@ -27,7 +27,7 @@ This is a simple syntax highlighting and "to unicode coverter" Extention for the
 * "\lambda" => λ
 
 done via "Command Palette"
-![Extention settings](images/settings.png)
+![settings](https://github.com/user-attachments/assets/cb893935-5ba7-4912-bae9-6d507ab38651)
 
 ## Requirements
 
