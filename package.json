@@ -3,7 +3,7 @@
   "displayName": "LoremScriptum",
   "description": "A code highlighter for the eso lang LoremScriptum",
   "version": "0.0.2",
-  "icon": "images/spellIcon.png",
+  "icon": "images/3232LS.png",
   "publisher": "BackBencher",
   "engines": {
     "vscode": "^1.97.0"
