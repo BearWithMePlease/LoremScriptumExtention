@@ -5,16 +5,36 @@
   "patterns": [
     {
       "name": "keyword.control.loremscriptum",
-      "match": "(\\b(si|ni|nisi|retro)\\b)|(∑|λ)"
+      "match": "(\\b(si|ni|nisi|retro|finio|apere|asertio)\\b)|(∑|λ)"
     },
     {
       "name": "keyword.type",
-      "match": "\\b(litera|numerus)\\b"
+      "match": "\\b(litera|numerus|nihil)\\b"
+    }, 
+    {
+      "name": "comment.line.double-slash.loremscriptum",
+      "match": "//.*$"
     },
     {
-      "name": "punctuation.definition.colon.loremscriptum",
-      "match": "(?<!:)[:]"
-    }    
-  ],
+      "name": "comment.block.loremscriptum",
+      "begin": "/\\*",
+      "end": "\\*/"
+    },
+    {
+      "name": "string.quoted.single.character.loremscriptum",
+      "begin": "'",
+      "end": "'",
+      "patterns": [
+        {
+          "name": "constant.character.escape.loremscriptum",
+          "match": "\\\\."
+        }
+      ]
+    },
+    {
+      "name": "variable.language.imported.loremscriptum",
+      "match": "(?<=\\b(apere)\\s)(\"[\\w.]+\")"
+    }
+],
   "scopeName": "source.loremscriptum"
 }

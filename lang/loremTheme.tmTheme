@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plist version="1.0">
+  <dict>
+    <key>name</key>
+    <string>loremscriptum Theme</string>
+    <key>settings</key>
+    <array>
+      <!-- Keywords (control statements) -->
+      <dict>
+        <key>name</key>
+        <string>keyword.control.loremscriptum</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#FF6347</string> <!-- Tomato color -->
+          <key>fontStyle</key>
+          <string>bold</string>
+        </dict>
+      </dict>
+
+      <!-- Types -->
+      <dict>
+        <key>name</key>
+        <string>keyword.type.loremscriptum</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#FF4500</string> <!-- OrangeRed color -->
+        </dict>
+      </dict>
+
+      <!-- Custom token -->
+      <dict>
+        <key>name</key>
+        <string>test.type.loremscriptum</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#FFD700</string> <!-- Gold color -->
+        </dict>
+      </dict>
+    </array>
+  </dict>
+</plist>

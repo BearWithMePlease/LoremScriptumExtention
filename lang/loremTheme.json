@@ -1,0 +1,16 @@
+{
+    "name": "My Custom Theme",
+    "colors": {},
+    "tokenColors": [
+      {
+        "scope": [
+          "test.type.loremscriptum"
+        ],
+        "settings": {
+          "foreground": "#FF6347", 
+          "fontStyle": "bold"
+        }
+      }
+    ]
+  }
+  

@@ -7,7 +7,17 @@ import * as crypto from 'crypto';
 
 // Latex to Unicode dictionary
 const latexUnicodeDict: { [key: string]: string } = {
-  "\\alpha": "\u03B1",   // α
+  "==": "⇔",
+  "!=": "≠",
+  "<=": "\u2264",     // ≤
+  ">=": "\u2265",     // ≥
+  "\\sum": "\u2211",     // ∑
+  "*": "\u00D7",   // ×
+  "/": "\u00F7",     // ÷
+  "\\neg": "\u00AC",     // ¬
+  "\\lambda": "\u03BB"  // λ
+
+  /* "\\alpha": "\u03B1",   // α
   "\\beta": "\u03B2",    // β
   "\\gamma": "\u03B3",   // γ
   "\\delta": "\u03B4",   // δ
@@ -17,7 +27,6 @@ const latexUnicodeDict: { [key: string]: string } = {
   "\\theta": "\u03B8",   // θ
   "\\iota": "\u03B9",    // ι
   "\\kappa": "\u03BA",   // κ
-  "\\lambda": "\u03BB",  // λ
   "\\mu": "\u03BC",      // μ
   "\\nu": "\u03BD",      // ν
   "\\xi": "\u03BE",      // ξ
@@ -30,24 +39,18 @@ const latexUnicodeDict: { [key: string]: string } = {
   "\\chi": "\u03C7",     // χ
   "\\psi": "\u03C8",     // ψ
   "\\omega": "\u03C9",   // ω
-  "\\sum": "\u2211",     // ∑
   "\\prod": "\u220F",    // ∏
   "\\int": "\u222B",     // ∫
   "\\infty": "\u221E",   // ∞
   "\\forall": "\u2200",  // ∀
   "\\exists": "\u2203",  // ∃
-  "\\neg": "\u00AC",     // ¬
   "\\in": "\u2208",      // ∈
   "\\notin": "\u2209",   // ∉
   "\\subset": "\u2282",  // ⊂
   "\\supset": "\u2283",  // ⊃
-  "\\leq": "\u2264",     // ≤
-  "\\geq": "\u2265",     // ≥
   "\\equiv": "\u2261",   // ≡
   "\\approx": "\u2248",  // ≈
-  "\\pm": "\u00B1",      // ±
-  "\\times": "\u00D7",   // ×
-  "\\div": "\u00F7",     // ÷
+  "\\pm": "\u00B1",      // ± */
 };
 
 let oldChecksum = '';
