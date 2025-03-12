@@ -91,9 +91,13 @@ export function activate(context: vscode.ExtensionContext) {
         let updatedText = fileText;
   
         for (const [key, value] of Object.entries(latexUnicodeDict)) {
+          if (key === "/") { // double slash handeling
+            updatedText = updatedText.replace(/(?<!\/)\/(?!\/)/g, value);
+          } else {
           const escapedKey = key.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&');
           const regex = new RegExp(escapedKey, 'g');
           updatedText = updatedText.replace(regex, value);
+          }
         }
   
         const edit = new vscode.WorkspaceEdit();

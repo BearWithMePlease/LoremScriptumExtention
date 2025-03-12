@@ -5,11 +5,11 @@
   "patterns": [
     {
       "name": "keyword.control.loremscriptum",
-      "match": "(\\b(si|ni|nisi|retro|finio|apere|asertio)\\b)|(∑|λ)"
+      "match": "(\\b(si|ni|nisi|retro|finio|apere)\\b)|(∑|λ)"
     },
     {
       "name": "keyword.type",
-      "match": "\\b(litera|numerus|nihil)\\b"
+      "match": "\\b(litera|numerus|nihil|asertio)\\b"
     }, 
     {
       "name": "comment.line.double-slash.loremscriptum",
