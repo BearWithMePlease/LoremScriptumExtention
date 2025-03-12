@@ -9,7 +9,11 @@ This is a simple syntax highlighting and "to unicode coverter" Extention for the
 * Imports
 * Brackets (functionally same as in VisualStudio)
 * Function Declarations
+* function identifiers
+* function calls
 * return-Statements
+* numbers (illegal numbers too)
+* variables
 * comments
 * and Control-Structure
 

@@ -22,7 +22,15 @@
     },
     {
       "name": "entity.name.function",
-      "match": "(\\bTEST\\b)"
+      "match": "( +[a-z][(a-z)|(A-Z)|(0-9)]*(?= *= *λ))|([a-z][(a-z)|(A-Z)|(0-9)]*(?= *\\())"
+    },
+    {
+      "name": "variable",
+      "match": "[a-z][(a-z)|(A-Z)|(0-9)]*"
+    },
+    {
+      "name": "constant.numeric",
+      "match": "[OMCDLXVI]+"
     },
     {
       "name": "string.quoted.single.character.loremscriptum",
