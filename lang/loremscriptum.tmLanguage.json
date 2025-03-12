@@ -9,7 +9,7 @@
     },
     {
       "name": "keyword.type",
-      "match": "\\b(litera|numerus|nihil|asertio)\\b"
+      "match": "\\b(litera|numerus|nihil|asertio|falso|veri)\\b"
     }, 
     {
       "name": "comment.line.double-slash.loremscriptum",
@@ -19,6 +19,10 @@
       "name": "comment.block.loremscriptum",
       "begin": "/\\*",
       "end": "\\*/"
+    },
+    {
+      "name": "entity.name.function",
+      "match": "(\\bTEST\\b)"
     },
     {
       "name": "string.quoted.single.character.loremscriptum",
