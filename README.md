@@ -29,6 +29,8 @@ This is a simple syntax highlighting and "to unicode coverter" Extention for the
 * "/" => ÷
 * "\neg" => ¬
 * "\lambda" => λ
+* "\and" => "∧"
+* "\or" => "∨"
 
 done via "Command Palette"
 ![settings](https://github.com/user-attachments/assets/cb893935-5ba7-4912-bae9-6d507ab38651)

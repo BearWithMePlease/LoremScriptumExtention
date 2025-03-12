@@ -4,6 +4,7 @@
   "scopeName": "source.loremscriptum",
   "brackets": [
     [":", ";"],
-    ["(", ")"]
+    ["(", ")"],
+    ["[","]"]
   ]
 }

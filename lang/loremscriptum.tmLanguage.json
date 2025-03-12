@@ -16,21 +16,16 @@
       "match": "//.*$"
     },
     {
-      "name": "comment.block.loremscriptum",
-      "begin": "/\\*",
-      "end": "\\*/"
-    },
-    {
       "name": "entity.name.function",
-      "match": "( +[a-z][(a-z)|(A-Z)|(0-9)]*(?= *= *λ))|([a-z][(a-z)|(A-Z)|(0-9)]*(?= *\\())"
+      "match": "(([a-z]|_)[\\w\\d]*(?= *\\())|( +([a-z]|_)[\\w\\d]*(?= *= *(λ|apere)))"
     },
     {
       "name": "variable",
-      "match": "[a-z][(a-z)|(A-Z)|(0-9)]*"
+      "match": "\\b([a-z]|_|ö|ä|ü)[\\w\\d]*\\b"
     },
     {
       "name": "constant.numeric",
-      "match": "[OMCDLXVI]+"
+      "match": "\\b[OMCDLXVI]+\\b"
     },
     {
       "name": "string.quoted.single.character.loremscriptum",

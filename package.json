@@ -2,7 +2,7 @@
   "name": "loremscriptum",
   "displayName": "LoremScriptum",
   "description": "A code highlighter for the eso lang LoremScriptum",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "icon": "images/loremscriptumLogo.png",
   "publisher": "BackBencher",
   "engines": {

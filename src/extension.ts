@@ -15,8 +15,9 @@ const latexUnicodeDict: { [key: string]: string } = {
   "*": "\u00D7",   // ×
   "/": "\u00F7",     // ÷
   "\\neg": "\u00AC",     // ¬
-  "\\lambda": "\u03BB"  // λ
-
+  "\\lambda": "\u03BB",  // λ
+  "\\and": "∧",
+  "\\or": "∨"
   /* "\\alpha": "\u03B1",   // α
   "\\beta": "\u03B2",    // β
   "\\gamma": "\u03B3",   // γ
