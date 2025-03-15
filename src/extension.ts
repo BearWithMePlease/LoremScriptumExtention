@@ -95,8 +95,11 @@ export function activate(context: vscode.ExtensionContext) {
           if (key === "/") { // double slash handeling
             updatedText = updatedText.replace(/(?<!\/)\/(?!\/)/g, value);
           } else {
-          const escapedKey = key.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&');
-          const regex = new RegExp(escapedKey, 'g');
+            // Escape the key to safely use it in a regular expression
+            const escapedKey = key.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&');
+            
+            // Regex to replace the key, excluding matches inside single quotes
+            const regex = new RegExp(`(?<!')${escapedKey}(?!')`, 'g');
           updatedText = updatedText.replace(regex, value);
           }
         }
