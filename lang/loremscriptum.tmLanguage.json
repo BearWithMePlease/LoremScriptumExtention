@@ -9,7 +9,7 @@
     },
     {
       "name": "keyword.type",
-      "match": "\\b(litera|numerus|nihil|asertio|falso|veri)\\b"
+      "match": "\\b(litera|numerus|nihil|asertio|falso|veri|rerum)\\b"
     }, 
     {
       "name": "comment.line.double-slash.loremscriptum",
