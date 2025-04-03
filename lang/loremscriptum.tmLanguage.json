@@ -39,6 +39,17 @@
       ]
     },
     {
+      "name": "string.quoted.double.customlang",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.loremscriptum",
+          "match": "\\\\."
+        }
+      ]
+    },
+    {
       "name": "variable.language.imported.loremscriptum",
       "match": "(?<=\\b(apere)\\s)(\"[\\w.]+\")"
     }
